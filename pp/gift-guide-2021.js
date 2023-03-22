@@ -31,11 +31,7 @@ require(['jquery'], function($) {
     },
     {
       category:'color-black',
-<<<<<<< HEAD
-      skus: ['310','3266','395','112','363','333']
-=======
       skus: ['310','3266','395','112','363','333-1SR']
->>>>>>> 1b8d3d325f8d35dea034aeb571d048a73e9267e8
     },
     {
       category:'color-metallic',

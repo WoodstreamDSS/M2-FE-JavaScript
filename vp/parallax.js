@@ -49,7 +49,6 @@ HTML Example:
             this.scrollSpeed = 10;
         } else {
             this.scrollSpeed = this.mapRange(speedAttr, 0, 100, 0, 5);
-            console.log(this.scrollSpeed);
         }
 
         if (this.breakpoint === undefined) { this.breakpoint = 0; }

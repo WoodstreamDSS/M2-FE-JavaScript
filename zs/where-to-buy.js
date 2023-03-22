@@ -34,7 +34,7 @@ require(['jquery'], function($) {
   $(window).on('resize', function() { tabHeight(); });
   if (window.location.hash) {
     let hash = window.location.hash.substring(1);
-    if (hash === 'service') { jQuery('.tab-wrap .tab-item[data-id="service"]').click(); }
+    if (hash === 'service') { $('.tab-wrap .tab-item[data-id="service"]').click(); }
   }
 
 });

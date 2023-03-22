@@ -43,7 +43,6 @@ woodstream.howItWorksSlider = function(id) {
     } else {
       this.swipe = false;
       this.navCircles.attr({'aria-hidden': 'true'});
-      console.log(this.wrap);
     }
     this.updatePanelPosition();
     setTimeout(() => { this.wrap.removeClass('quick'); }, 250);
@@ -81,7 +80,6 @@ woodstream.howItWorksSlider = function(id) {
       if (targetIndex == undefined) { targetIndex = this.currentPanel; }
       this.currentPanel = targetIndex;
       let newLeft = -1 * ((this.panelWidth / 2) + (this.panelWidth * this.currentPanel));
-      console.log(newLeft);
       this.wrap.css('left', newLeft);
     } else {
       this.wrap.css('left', 0);
@@ -128,11 +126,8 @@ woodstream.howItWorksSlider = function(id) {
 
 }
 
-
-
 let blockSliderCollection = [];
 let blockSliders = $('.hiw-slider');
 blockSliders.each(function() {
   blockSliderCollection.push(new woodstream.howItWorksSlider($(this).attr('id')));
 });
-console.log(blockSliderCollection);

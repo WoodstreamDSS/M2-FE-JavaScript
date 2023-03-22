@@ -91,7 +91,6 @@ require(['jquery'], function($) {
     }
 
     touchHandler(obj) {
-console.log('mobile:' + this.mobile);
       if (this.mobile) {
         if (obj.status == 'end') {
           if (obj.xMove < -50) { this.next(); }

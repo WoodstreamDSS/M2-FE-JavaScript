@@ -73,16 +73,12 @@ require(['jquery'], function($) {
         });
 
         this.directNav = function(newIndex) {
-            console.log('current index: ' + this.index);
-            console.log('new index:     ' + newIndex);
             if (this.index < newIndex) { // we're going to hit the next button a few times.
-                console.log('Next!');
                 while (this.index < newIndex) {
                     this.nextSlide(0);
                 }
             }
             if (this.index > newIndex) { // we're going to hit the prev button a few times.
-                console.log('Prev!');
                 while (this.index > newIndex) {
                     this.prevSlide(0);
                 }

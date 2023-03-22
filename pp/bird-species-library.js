@@ -157,7 +157,6 @@ require(['jquery'], function ($) {
       sliderArray[i].numberOfItems = 0;
       sliderArray[i].index = 0;
     }
-    console.log(sliderArray);
   }
 
   $(document).ready(function () {
@@ -167,13 +166,11 @@ require(['jquery'], function ($) {
   $(window).on('resize', debounce(sliderResize, 250));
 
   $('.controls .left-control').on('click', function () {
-    console.log('left');
     var id = parseInt($(this).attr('data-id'));
     leftControl(id, 0);
   });
 
   $('.controls .right-control').on('click', function () {
-    console.log('right');
     var id = parseInt($(this).attr('data-id'));
     rightControl(id, 0);
   });

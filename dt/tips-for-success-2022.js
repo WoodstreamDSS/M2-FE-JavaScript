@@ -121,7 +121,6 @@ woodstream.SimpleTabsMultiple = function (el) {
       }
       $.each(this.mobileButtons, function (i, e) {
         if ($('#' + $(e).attr('aria-controls')).attr('aria-hidden') == 'false') {
-          //console.log($('#' + $(e).attr('aria-controls')));
           $(e).addClass('active');
         } else {
           $(e).removeClass('active');

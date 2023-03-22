@@ -5,7 +5,7 @@ require(['jquery'], function($) {
   var swapTab = function(el) {
     var idx = parseInt($(el).attr('data-idx'));
     for (var i = 0; i < blockSliders.length; i++) {
-      if (i !== idx) { blockSliders[i].hide(); console.log('hide'); } else { blockSliders[i].show(); console.log('show'); }
+      if (i !== idx) { blockSliders[i].hide(); } else { blockSliders[i].show(); }
     }
 
     $('.home-tabs .home-tab-navigation ul li').removeClass('active');

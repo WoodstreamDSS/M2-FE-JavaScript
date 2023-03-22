@@ -34,7 +34,6 @@ require(['jquery'], function($) {
     }
 
     updateAria = function() {
-      console.log(this.index);
       this.navWrap.find('.nav-panel').attr('aria-selected', false);
       this.navWrap.find('.nav-panel:first-child').attr('aria-selected', true);
 

@@ -64,7 +64,6 @@ require(['jquery'], function ($) {
   $('.slide-table .controls button').on('click', (e) => {
     let colWidth = $('.data-wrap div[role="cell"]').innerWidth();
     let newOffset = currentOffset;
-    console.log(e.currentTarget);
     $(e.currentTarget).hasClass('prev')
       ? (newOffset += colWidth)
       : (newOffset -= colWidth);

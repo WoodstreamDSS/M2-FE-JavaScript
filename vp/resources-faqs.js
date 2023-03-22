@@ -13,7 +13,6 @@ $(document).ready(function() {
 
   $(document).on('click', 'a[href^="#"]', function(e){
     var id = $(this).attr('href');
-    console.log('ID is ' + id);
     e.preventDefault();
     $('body, html').animate({scrollTop: $(id).offset().top - 70});
   });
